@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{% load static %}
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,11 +12,11 @@
     <h1 class="alert alert-info">Email Sending Form</h1>
     <h3>Sending an Email Demo</h3><br>
 
-    <form method="POST" action="{% static 'emailapp/success.html' %}">
+    <form method="POST">
         {% csrf_token %}
         <div class= "container">
             <h3>{{ form.as_p }}</h3>
-            <button type = "submit" class= "btn btn-primary btn-lg">Submit</button>
+            <button type = "submit" class= "btn btn-primary">Submit</button>
         </div>
     </form>
 
